@@ -17,7 +17,7 @@ const Resume = () => {
         headerText="My Resume"
         icon={<BsInfoCircleFill size={40} />}
       />
-      <div className="my_resume">
+      
       <div className="timeline">
         <div className="timeline__experience">
           <h3 className="timeline__experience__header-text">Experience</h3>
@@ -84,7 +84,6 @@ const Resume = () => {
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
-        </div>
         </div>
       </div>
     </section>
