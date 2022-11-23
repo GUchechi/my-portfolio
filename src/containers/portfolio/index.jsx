@@ -129,7 +129,7 @@ const Portfolio = () => {
                   {
                     index === hoveredValue && (
                       <div>
-                        <p>{item.value}</p>
+                        <p>{item.name}</p>
                         <button>Visit</button>
                       </div>
                     )
