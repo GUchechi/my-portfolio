@@ -56,7 +56,7 @@ const Home = () => {
           <button onClick={handleNavigateToContactPage}>Hire Me 🙏🏻</button>
         </div>
       </Animate>
-      <section class="marquee-section">
+      {/* <section class="marquee-section">
             <div class="marquee-container">
                <div class="marquee3k" data-speed="0.25" >
                   <h4> <span>DESIGN</span>
@@ -68,7 +68,7 @@ const Home = () => {
                  <span> MOBILE-RESPONSIVE </span> </h4>
                </div>
             </div>  
-      </section>
+      </section> */}
     </div>
   );
 };
