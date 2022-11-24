@@ -3,8 +3,25 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import { AiFillContacts } from "react-icons/ai";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 
 const Contact = () => {
+  const refForm = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_3234uo2', 'template_xh64nkc', refForm.current, '399w-kjmFhw-oiUI3')
+        .then(() => {
+            alert('Message successfully Sent!');
+            window.location.reload(false);
+        }, () => {
+            alert('Failed to Send Message, please try again.');
+        });
+        e.target.reset();
+  }
+
   return (
     <section id="contact" className="contact">
       <PageHeaderContent
@@ -36,12 +53,12 @@ const Contact = () => {
             transform: "translateX(0px)",
           }}
         >
-          <div className="contact__content__form">
-            <div className="contact__content__form__controlswrapper">
+          <form action="" className="contact__content__form" ref={refForm} onSubmit={sendEmail}>
+            <div  className="contact__content__form__controlswrapper" >
               <div>
                 <input
                   required
-                  name="name"
+                  name="from_name"
                   className="inputName"
                   type={"text"}
                 />
@@ -52,7 +69,7 @@ const Contact = () => {
               <div>
                 <input
                   required
-                  name="email"
+                  name="user_email"
                   className="inputEmail"
                   type={"text"}
                 />
@@ -63,7 +80,7 @@ const Contact = () => {
               <div>
                 <textarea
                   required
-                  name="description"
+                  name="user_email"
                   className="inputDescription"
                   type={"text"}
                   rows="5"
@@ -74,7 +91,7 @@ const Contact = () => {
               </div>
             </div>
             <button>Submit</button>
-          </div>
+          </form>
         </Animate>
       </div>
     </section>
