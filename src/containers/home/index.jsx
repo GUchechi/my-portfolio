@@ -59,21 +59,25 @@ const Home = () => {
             <div className="marquee3k">
               <h4>
                 {" "}
-                <span>DESIGN</span>
-                <span>DEVELOPMENT</span>
-                <span>BRANDING </span>
-                <span> MOBILE-RESPONSIVE </span>{" "}
+                <span>SOFTWARE</span>
+                <span>REACT</span>
+                <span>JAVASCRIPT </span>
+                <span> CSS </span>{" "}
               </h4>
 
               <h4>
                 {" "}
-                <span>DESIGN</span>
-                <span>DEVELOPMENT</span>
+                <span>SOFTWARE</span>
+                <span>REACT</span>
+                <span> CSS </span>
+                <span> HTML </span>{" "}
               </h4>
               <h4>
                 {" "}
-                <span>DESIGN</span>
-                <span>DEVELOPMENT</span>
+                <span>SOFTWARE</span>
+                <span>REACT</span>
+                <span> HTML </span>
+                <span> CSS </span>{" "}
               </h4>
             </div>
           </div>
@@ -83,21 +87,24 @@ const Home = () => {
             <div className="marquee3k">
               <h4>
                 {" "}
-                <span>DESIGN</span>
-                <span>DEVELOPMENT</span>
-                <span>BRANDING </span>
+                <span>SOFTWARE</span>
+                <span>REACT</span>
+                <span>JAVASCRIPT </span>
+                <span> HTML </span>
                 <span> MOBILE-RESPONSIVE </span>{" "}
               </h4>
 
               <h4>
                 {" "}
-                <span>DESIGN</span>
-                <span>DEVELOPMENT</span>
+                <span>SOFTWARE</span>
+                <span>REACT</span>
+                <span> HTML </span>{" "}
               </h4>
               <h4>
                 {" "}
-                <span>DESIGN</span>
-                <span>DEVELOPMENT</span>
+                <span>SOFTWARE</span>
+                <span>REACT</span>
+                <span> HTML </span>{" "}
               </h4>
             </div>
           </div>
