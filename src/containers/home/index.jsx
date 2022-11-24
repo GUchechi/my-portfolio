@@ -73,6 +73,11 @@ const Home = () => {
                    <span>DEVELOPMENT</span>
 
                 </h4>
+                <h4> <span>DESIGN</span>
+                     
+                   <span>DEVELOPMENT</span>
+
+                </h4>
                </div>
             </div>  
             </Marquee>
@@ -88,6 +93,11 @@ const Home = () => {
                  <span> MOBILE-RESPONSIVE </span> </h4>
 
                  <h4> <span>DESIGN</span>
+                     
+                   <span>DEVELOPMENT</span>
+
+                </h4>
+                <h4> <span>DESIGN</span>
                      
                    <span>DEVELOPMENT</span>
 
