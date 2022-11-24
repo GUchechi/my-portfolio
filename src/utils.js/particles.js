@@ -35,7 +35,7 @@ export default {
       },
       links: {
         color: "#ffffff",
-        distance: 10,
+        distance: 20,
         enable: true,
         opacity: 0.5,
         width: 1,
