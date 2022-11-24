@@ -4,14 +4,15 @@ import "./styles.scss";
 import { Animate } from "react-simple-animate";
 import Typewriter from "typewriter-effect";
 import { useState } from "react";
-import Marquee3k from 'marquee3000';
+// import Marquee3k from "marquee3000";
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
   const [state] = useState({
     title: "Hello, I'm Godswill",
     titleThree: "FrontEnd Developer",
   });
-  Marquee3k.init() 
+  // Marquee3k.init();
   const navigate = useNavigate();
 
   const handleNavigateToContactPage = () => {
@@ -22,7 +23,7 @@ const Home = () => {
       <div className="home__text-wrapper">
         <h1>
           {state.title}
-          <span class="waving-hand">👋🏼</span>
+          <span className="waving-hand">👋🏼</span>
           <br />
           {/* {state.titleThree} */}
           <Typewriter
@@ -33,13 +34,12 @@ const Home = () => {
               strings: [
                 "Front End Developer",
                 "I love React Js",
-                "I'm a Tech Enthusiast"
+                "I'm a Tech Enthusiast",
               ],
             }}
           />
         </h1>
-        <div>
-        </div>
+        <div></div>
       </div>
       <Animate
         play
@@ -56,9 +56,10 @@ const Home = () => {
           <button onClick={handleNavigateToContactPage}>Hire Me 🙏🏻</button>
         </div>
       </Animate>
-      {/* <section class="marquee-section">
-            <div class="marquee-container">
-               <div class="marquee3k" data-speed="0.25" >
+      <section className="marquee-section">
+          <Marquee speed={60} gradient={false} pauseOnHover>
+            <div className="marquee-container">
+               <div className="marquee3k">
                   <h4> <span>DESIGN</span>
                      
                    <span>DEVELOPMENT</span>
@@ -66,9 +67,16 @@ const Home = () => {
                   <span>BRANDING </span>
 
                  <span> MOBILE-RESPONSIVE </span> </h4>
+
+                 <h4> <span>DESIGN</span>
+                     
+                   <span>DEVELOPMENT</span>
+
+                </h4>
                </div>
             </div>  
-      </section> */}
+            </Marquee>
+      </section>
     </div>
   );
 };

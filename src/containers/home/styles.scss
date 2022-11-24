@@ -1,186 +1,172 @@
-.home{
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.home {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+ 
+  
+
+  &__text-wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
 
-    &__text-wrapper{
-        display: flex;
-        justify-content: center;
-        // align-content: center;
-        // flex-direction: column;
-
-
-        h1 {
-            color: var(--yellow-theme-main-color);
-            margin: 0px;
-            font-weight: 500;
-            font-size: 8rem;
-            line-height: 10rem;
-            position:relative ;
-            overflow: hidden;
-            white-space: nowrap;
-            animation-name: moveRight !important;
-            animation-duration: 0.7s !important;
-            // animation: typingEffectAnimation 2.5s steps(20, end);
-            .waving-hand{
-                webkit-animation-duration: 1.2s;
-                animation-duration: 1.2s;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-                -webkit-animation-name: wave;
-                animation-name: wave;
-                display: inline-block;
-                transform-origin: 70% 70%;
-                margin-left: 4px;
-            }
-        }
+    h1 {
+      color: var(--yellow-theme-main-color);
+      margin: 0px;
+      font-weight: 500;
+      font-size: 8rem;
+      line-height: 10rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      animation-name: moveRight;
+      animation-duration: 0.7s;
+      // animation: typingEffectAnimation 2.5s steps(20, end);
+      .waving-hand {
+        webkit-animation-duration: 1.2s;
+        animation-duration: 1.2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: wave;
+        animation-name: wave;
+        display: inline-block;
+        transform-origin: 70% 70%;
+        margin-left: 4px;
+      }
     }
-    &__contact-me{
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
+  }
+  &__contact-me {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 
-        button{
-            cursor: pointer;
-            padding: 10px 70px;
-            font-size: 2rem;
-            background-color: transparent;
-            color: var(--yellow-theme-main-color);
-            border: 0.1rem solid var(--yellow-theme-main-color);
-            border-radius: 4px;
-            font-weight: 500;
-            transition: 0.5s ease-in-out;
-            text-transform: uppercase;
+    button {
+      cursor: pointer;
+      padding: 10px 70px;
+      font-size: 2rem;
+      background-color: transparent;
+      color: var(--yellow-theme-main-color);
+      border: 0.1rem solid var(--yellow-theme-main-color);
+      border-radius: 4px;
+      font-weight: 500;
+      transition: 0.5s ease-in-out;
+      text-transform: uppercase;
 
-        &:hover{
-            background: var(--yellow-theme-main-color);
-            color: #000000;
-        }
-        }
+      &:hover {
+        background: var(--yellow-theme-main-color);
+        color: #000000;
+      }
     }
+  }
 }
-
 
 /* MARQUEE SECTION */
 
-
-
-
-.marquee-section{
-    width: 100%;
-    overflow: hidden;
-    padding: 90px 0;
+.marquee-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 90px 0;
 }
 
-.marquee-container{
-    transform: rotate(-3deg);
-    width: 120%;
+.marquee-container {
+  width: 100%;
 }
 
-.marquee3k{
-    background-color: transparent;
-    height: 85px;
-    display: flex;
-    align-items: center;
-    // border: 1px solid var(--yellow-theme-main-color);
+.marquee3k {
+  background-color: transparent;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  // border: 1px solid var(--yellow-theme-main-color);
 }
 
 .marquee3k h4 {
-   color: var(--yellow-theme-main-color);
-   font-size: 18px;
+  color: var(--yellow-theme-main-color);
+  font-size: 18px;
 }
-.marquee3k h4 span{
-    margin: 0 50px;
+.marquee3k h4 span {
+  margin: 0 50px;
 }
-
-
-
-
-
 
 @media only screen and (max-width: 550px) {
-    .home__text-wrapper h1 {
-        font-size: 3rem;
-        line-height: 5rem;
-    }
+  .home__text-wrapper h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
 }
 
-@media only screen and (min-width: 551px) and (max-width: 768px){
-    .home__text-wrapper h1 {
-        font-size: 4rem;
-        line-height: 6rem;
-    }
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  .home__text-wrapper h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
 }
-
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
-    .home__text-wrapper h1 {
-        font-size: 6rem;
-        line-height: 8rem;
-    }
+  .home__text-wrapper h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
 }
 
 // @keyframes typingEffectAnimation {
 //     from {
 //       width: 0;
 //     }
-  
+
 //     to {
 //       width: 100%;
 //     }
 //   }
 
 @keyframes moveRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @keyframes moveLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-150px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @keyframes moveUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 @keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
 
-    0% {
-        transform: rotate(0deg);
-    }
+  50% {
+    transform: rotate(35deg);
+  }
 
-    50% {
-        transform: rotate(35deg);
-    }
- 
-    100% {
-        transform: rotate(0deg);
-    } 
+  100% {
+    transform: rotate(0deg);
+  }
 }
