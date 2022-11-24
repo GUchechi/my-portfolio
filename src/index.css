@@ -30,16 +30,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: var(--primary-color);
-    width: 0.3rem;
+  /* background-color: var(--primary-color); */
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: var(--secondary-color); */
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  body::-webkit-scrollbar {
+    display: none;
   }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-color);
-  }
-  
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
-    body::-webkit-scrollbar {
-      display: none;
-    }
-  }
+}
