@@ -76,6 +76,25 @@ const Home = () => {
                </div>
             </div>  
             </Marquee>
+            <Marquee speed={60} gradient={false} pauseOnHover direction="right">
+            <div className="marquee-container">
+               <div className="marquee3k">
+                  <h4> <span>DESIGN</span>
+                     
+                   <span>DEVELOPMENT</span>
+
+                  <span>BRANDING </span>
+
+                 <span> MOBILE-RESPONSIVE </span> </h4>
+
+                 <h4> <span>DESIGN</span>
+                     
+                   <span>DEVELOPMENT</span>
+
+                </h4>
+               </div>
+            </div>  
+            </Marquee>
       </section>
     </div>
   );
