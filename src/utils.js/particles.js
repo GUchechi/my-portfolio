@@ -24,7 +24,7 @@ export default {
           quantity: 4,
         },
         repulse: {
-          distance: 200,
+          distance: 100,
           duration: 0.4,
         },
       },
@@ -35,7 +35,7 @@ export default {
       },
       links: {
         color: "#ffffff",
-        distance: 50,
+        distance: 10,
         enable: true,
         opacity: 0.5,
         width: 1,
@@ -50,7 +50,7 @@ export default {
           default: "bounce",
         },
         random: false,
-        speed: 2.5,
+        speed: 0.5,
         straight: false,
       },
       number: {

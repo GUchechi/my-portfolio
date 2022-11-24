@@ -6,8 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
- 
-  
 
   &__text-wrapper {
     display: flex;
@@ -24,7 +22,8 @@
       white-space: nowrap;
       animation-name: moveRight;
       animation-duration: 0.7s;
-      // animation: typingEffectAnimation 2.5s steps(20, end);
+      
+      
       .waving-hand {
         webkit-animation-duration: 1.2s;
         animation-duration: 1.2s;
@@ -80,7 +79,6 @@
   height: 85px;
   display: flex;
   align-items: center;
-  // border: 1px solid var(--yellow-theme-main-color);
 }
 
 .marquee3k h4 {
@@ -112,15 +110,6 @@
   }
 }
 
-// @keyframes typingEffectAnimation {
-//     from {
-//       width: 0;
-//     }
-
-//     to {
-//       width: 100%;
-//     }
-//   }
 
 @keyframes moveRight {
   0% {

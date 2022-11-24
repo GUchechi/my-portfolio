@@ -4,7 +4,6 @@ import "./styles.scss";
 import { Animate } from "react-simple-animate";
 import Typewriter from "typewriter-effect";
 import { useState } from "react";
-// import Marquee3k from "marquee3000";
 import Marquee from "react-fast-marquee";
 
 const Home = () => {
@@ -12,7 +11,6 @@ const Home = () => {
     title: "Hello, I'm Godswill",
     titleThree: "FrontEnd Developer",
   });
-  // Marquee3k.init();
   const navigate = useNavigate();
 
   const handleNavigateToContactPage = () => {
@@ -25,7 +23,6 @@ const Home = () => {
           {state.title}
           <span className="waving-hand">👋🏼</span>
           <br />
-          {/* {state.titleThree} */}
           <Typewriter
             options={{
               autoStart: true,
@@ -57,54 +54,54 @@ const Home = () => {
         </div>
       </Animate>
       <section className="marquee-section">
-          <Marquee speed={60} gradient={false} pauseOnHover>
-            <div className="marquee-container">
-               <div className="marquee3k">
-                  <h4> <span>DESIGN</span>
-                     
-                   <span>DEVELOPMENT</span>
+        <Marquee speed={60} gradient={false} pauseOnHover>
+          <div className="marquee-container">
+            <div className="marquee3k">
+              <h4>
+                {" "}
+                <span>DESIGN</span>
+                <span>DEVELOPMENT</span>
+                <span>BRANDING </span>
+                <span> MOBILE-RESPONSIVE </span>{" "}
+              </h4>
 
-                  <span>BRANDING </span>
+              <h4>
+                {" "}
+                <span>DESIGN</span>
+                <span>DEVELOPMENT</span>
+              </h4>
+              <h4>
+                {" "}
+                <span>DESIGN</span>
+                <span>DEVELOPMENT</span>
+              </h4>
+            </div>
+          </div>
+        </Marquee>
+        <Marquee speed={60} gradient={false} pauseOnHover direction="right">
+          <div className="marquee-container">
+            <div className="marquee3k">
+              <h4>
+                {" "}
+                <span>DESIGN</span>
+                <span>DEVELOPMENT</span>
+                <span>BRANDING </span>
+                <span> MOBILE-RESPONSIVE </span>{" "}
+              </h4>
 
-                 <span> MOBILE-RESPONSIVE </span> </h4>
-
-                 <h4> <span>DESIGN</span>
-                     
-                   <span>DEVELOPMENT</span>
-
-                </h4>
-                <h4> <span>DESIGN</span>
-                     
-                   <span>DEVELOPMENT</span>
-
-                </h4>
-               </div>
-            </div>  
-            </Marquee>
-            <Marquee speed={60} gradient={false} pauseOnHover direction="right">
-            <div className="marquee-container">
-               <div className="marquee3k">
-                  <h4> <span>DESIGN</span>
-                     
-                   <span>DEVELOPMENT</span>
-
-                  <span>BRANDING </span>
-
-                 <span> MOBILE-RESPONSIVE </span> </h4>
-
-                 <h4> <span>DESIGN</span>
-                     
-                   <span>DEVELOPMENT</span>
-
-                </h4>
-                <h4> <span>DESIGN</span>
-                     
-                   <span>DEVELOPMENT</span>
-
-                </h4>
-               </div>
-            </div>  
-            </Marquee>
+              <h4>
+                {" "}
+                <span>DESIGN</span>
+                <span>DEVELOPMENT</span>
+              </h4>
+              <h4>
+                {" "}
+                <span>DESIGN</span>
+                <span>DEVELOPMENT</span>
+              </h4>
+            </div>
+          </div>
+        </Marquee>
       </section>
     </div>
   );
