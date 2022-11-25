@@ -40,11 +40,12 @@ const NavBar = () => {
   const handleToggle = () => {
     setToggleIcon(!toggleIcon); 
   };
+
   return (
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to={"/"} className="navbar__container__logo">
+          <Link to={"/"} className="navbar__container__logo" >
             <FaReact size={30} />
           </Link>
         </div>
@@ -54,6 +55,7 @@ const NavBar = () => {
               <Link
                 className="navbar__container__menu__item__links"
                 to={item.to}
+                onClick={handleToggle}
               >
                 {item.label}
               </Link>
