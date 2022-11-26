@@ -20,68 +20,67 @@ const portfolioData = [
     id: 1, 
     name: "Palour Beauty App",
     image: image1,
-    link: "",
+    url: "g-palour-app.vercel.app",
   },
   {
     id: 2,
     name: "Movie App",
-    link: "",
     image: image2,
+    url: "g-movie-app.vercel.app",
   },
   {
     id: 3,
     name: "Gym App",
     image: image3,
-    link: "",
+    url: "g-gym-fitness.vercel.app",
   },
   {
     id: 4,
     name: "Google Momentum App",
     image: image4,
-
-    link: "",
+    url: "g-google-momentum.vercel.app",
   },
   {
     id: 5,
     name: "Dad's Joke App",
     image: image5,
-    link: "",
+    url: "dad-joke-ruddy.vercel.app",
   },
   {
     id: 6,
     name: "Notes App",
     image: image6,
-    link: "",
+    url: "g-notes-app.vercel.app",
   },
   {
     id: 7,
     name: "GMord website",
     image: image7,
-    link: "",
+    url: "gmord-site.vercel.app",
   },
   {
     id: 8,
     name: "GitHub Finder App",
     image: image8,
-    link: "",
+    url: "github-profiles-guchechi.vercel.app",
   },
   {
     id: 9,
     name: "Random Quotes App",
     image: image9,
-    link: "",
+    url: "g-quotes.vercel.app",
   },
   {
     id: 10,
     name: "Quiz App",
     image: image10,
-    link: "",
+    url: "g-quiz-app.vercel.app",
   },
   {
     id: 11,
     name: "Theme-Clock",
     image: image11,
-    link: "",
+    url: "theme-clock-one.vercel.app",
   },
 ];
 
@@ -130,7 +129,8 @@ const Portfolio = () => {
                     index === hoveredValue && (
                       <div>
                         <p>{item.name}</p>
-                        <button>Visit</button>
+                        {/* <button>Visit</button> */}
+                        <button><a href={"http://"+item.url} className="link">Visit</a></button>
                       </div>
                     )
                   }
