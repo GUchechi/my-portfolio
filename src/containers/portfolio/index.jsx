@@ -130,7 +130,7 @@ const Portfolio = () => {
                       <div>
                         <p>{item.name}</p>
                         {/* <button>Visit</button> */}
-                        <button><a href={"http://"+item.url} className="link">Visit</a></button>
+                        <a href={"http://"+item.url} className="link"><button>Visit</button></a>
                       </div>
                     )
                   }
