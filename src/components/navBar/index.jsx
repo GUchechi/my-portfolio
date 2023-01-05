@@ -35,17 +35,15 @@ const data = [
 const NavBar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
 
-  
-
   const handleToggle = () => {
-    setToggleIcon(!toggleIcon); 
+    setToggleIcon(!toggleIcon);
   };
 
   return (
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to={"/"} className="navbar__container__logo" >
+          <Link to={"/"} className="navbar__container__logo">
             <FaReact size={30} />
           </Link>
         </div>

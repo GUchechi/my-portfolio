@@ -1,6 +1,7 @@
 import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeaderContent";
+import image0 from "../../images/image0.png";
 import image1 from "../../images/image1.png";
 import image2 from "../../images/image2.png";
 import image3 from "../../images/image3.png";
@@ -17,7 +18,13 @@ import { useState } from "react";
 
 const portfolioData = [
   {
-    id: 1, 
+    id: 0,
+    name: "Food App",
+    image: image0,
+    url: "food-app-two-ashen.vercel.app",
+  },
+  {
+    id: 1,
     name: "Palour Beauty App",
     image: image1,
     url: "g-palour-app.vercel.app",
@@ -95,10 +102,10 @@ const Portfolio = () => {
   const [hoveredValue, setHoveredValue] = useState(null);
 
   function handleHover(index) {
-    setHoveredValue(index)
+    setHoveredValue(index);
   }
 
-  console.log(hoveredValue)
+  console.log(hoveredValue);
 
   return (
     <section className="portfolio" id="portfolio">
@@ -113,31 +120,31 @@ const Portfolio = () => {
           ))}
         </ul>
         <div className="portfolio__content__cards">
-          {
-            portfolioData.map((item, index) => (
-              <div className="portfolio__content__cards__item" key={item.id}
-                onMouseEnter={() => handleHover(index)}
-                onMouseLeave={() => handleHover(null)}
-              >
-                <div className="portfolio__content__cards__item__img-wrapper" >
-                  <a>
-                    <img alt="dummy data" src={item.image} />
-                  </a>
-                </div>
-                <div className="overlay">
-                  {
-                    index === hoveredValue && (
-                      <div>
-                        <p>{item.name}</p>
-                      {/* <button>Visit</button> */}
-                        <a href={"http://"+item.url} className="link"><button>Visit</button></a>
-                      </div>
-                    )
-                  }
-                </div>
+          {portfolioData.map((item, index) => (
+            <div
+              className="portfolio__content__cards__item"
+              key={item.id}
+              onMouseEnter={() => handleHover(index)}
+              onMouseLeave={() => handleHover(null)}
+            >
+              <div className="portfolio__content__cards__item__img-wrapper">
+                <a>
+                  <img alt="dummy data" src={item.image} />
+                </a>
               </div>
-            ))
-          }
+              <div className="overlay">
+                {index === hoveredValue && (
+                  <div>
+                    <p>{item.name}</p>
+                    {/* <button>Visit</button> */}
+                    <a href={"http://" + item.url} className="link">
+                      <button>Visit</button>
+                    </a>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

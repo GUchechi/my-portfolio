@@ -100,7 +100,7 @@ const Home = () => {
                 <span>REACT</span>
                 <span> HTML </span>{" "}
               </h4>
-              <h4>
+              <h4> 
                 {" "}
                 <span>SOFTWARE</span>
                 <span>REACT</span>
