@@ -27,7 +27,7 @@ const personalDetails = [
 ];
 
 const jobSummary =
-  "A dynamic, hands-on, detail-oriented, and emerging front-end developer with 6 months of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design. Solid reputation for diligence regarding project accuracy and enhanced end-user functionality. Able to effectively self-manage during independent projects and collaborate as part of a productive team.";
+  "A dynamic, hands-on, detail-oriented, and emerging front-end developer with 7 months of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design. Solid reputation for diligence regarding project accuracy and enhanced end-user functionality. Able to effectively self-manage during independent projects and collaborate as part of a productive team.";
 
 const About = () => {
   return (
