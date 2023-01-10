@@ -4,7 +4,6 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import image0 from "../../images/image0.png";
 import image1 from "../../images/image1.png";
 import image2 from "../../images/image2.png";
-import image02 from "../../images/image02.png";
 import image3 from "../../images/image3.png";
 import image4 from "../../images/image4.png";
 import image5 from "../../images/image5.png";
@@ -35,12 +34,6 @@ const portfolioData = [
     name: "Movie App",
     image: image2,
     url: "g-movie-app.vercel.app",
-  },
-  {
-    id: 2,
-    name: "Defi App",
-    image: image02,
-    url: "defi-website-sage.vercel.app",
   },
   {
     id: 3,
