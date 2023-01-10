@@ -40,7 +40,7 @@ const portfolioData = [
     id: 2,
     name: "Defi App",
     image: image02,
-    url: "defi-website-sage.vercel.app/",
+    url: "defi-website-sage.vercel.app",
   },
   {
     id: 3,
